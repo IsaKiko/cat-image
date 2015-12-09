@@ -46,6 +46,10 @@
 	transform: scaleX(-1);
 }
 
+.red{
+	fill:red;
+}
+
 .nose{
 	stroke: white;
 	fill:white;

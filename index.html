@@ -21,13 +21,21 @@
 
 	<svg class="chart">
 		<circle class="cat" cx="150" cy="300" r="100" onclick="playpurr()"> </circle>
-	  	<ellipse class="tail" cx="280" cy="300" rx="10" ry="140"/>
+	  	<ellipse class="tail" cx="280" cy="300" rx="10" ry="140" onclick="playscream()"/>
 		<circle class="cat" cx="150" cy="140" r="90"  onclick="playmeow()"> </circle>
 		<polygon class= "cat ear" id="leftear" points="100,30 150,70 110,110"> </polygon>
 		<polygon class= "cat ear rightear" id="rightear"  points="100,30 150,70 110,110"> </polygon>
-		<circle class="eye" cx="110" cy="130" r="10"></circle>
-		<circle class="eye lefteye" cx="110" cy="130" r="10"></circle>
+
+
+		<circle class="eye red" cx="110" cy="130" r="10"></circle>
+		<circle class="eye lefteye red" cx="110" cy="130" r="10"></circle>
+
+
+
+		<circle class="eye" id="righteye" cx="110" cy="130" r="10"></circle>
+		<circle class="eye lefteye" id="lefteye" cx="110" cy="130" r="10"></circle>
 		<circle class="mouth" id="mouth" cx = "150" cy = "155" r= "20" ></circle>
+		<!-- mouth helpers... -->
 		<circle cx = "130" cy = "158" r= "20" ></circle>		
 		<circle cx = "170" cy = "158" r= "20" ></circle>
 		<circle  cx = "150" cy = "140" r= "20" ></circle>
@@ -41,6 +49,7 @@
 
 <audio id="audiomeow" src="meow.wav" ></audio>
 <audio id="audiopurr" src="purr.wav" ></audio>
+<audio id="audioscream" src="scream.wav" ></audio>
 
 </body>
 

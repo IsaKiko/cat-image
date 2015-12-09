@@ -25,3 +25,16 @@ function playpurr(){
 	   rightear.transition().attr("points","105,30 150,70 110,110").delay(400).duration(100); 
        rightear.transition().attr("points","100,30 150,70 110,110").delay(500).duration(100); 
 }
+
+
+
+  function playscream(){
+       var audio = document.getElementById("audioscream");
+       audio.play();
+       var lefteye = d3.select("#lefteye");
+       var righteye = d3.select("#righteye");
+	   lefteye.transition().attr("fill-opacity",0).duration(600); 
+	   lefteye.transition().attr("fill-opacity",1).delay(400).duration(400); 
+	   righteye.transition().attr("fill-opacity",0).duration(600); 
+	   righteye.transition().attr("fill-opacity",1).delay(400).duration(400);
+	   } 
